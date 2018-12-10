@@ -1,6 +1,6 @@
 Package: balance
 Title: Visualize Balances of Compositional Data
-Version: 0.1.6
+Version: 0.1.9
 URL: http://github.com/tpq/balance
 BugReports: http://github.com/tpq/balance/issues
 Authors@R: c(
@@ -22,8 +22,8 @@ Depends: R (>= 3.2.2)
 Suggests: ape, ggthemes, knitr, philr, propr, reshape2, rmarkdown,
         robCompositions, testthat
 NeedsCompilation: no
-Packaged: 2018-10-02 08:28:52 UTC; thom
+Packaged: 2018-12-10 03:14:10 UTC; thom
 Author: Thomas Quinn [aut, cre]
 Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
 Repository: CRAN
-Date/Publication: 2018-10-12 13:30:03 UTC
+Date/Publication: 2018-12-10 09:20:10 UTC

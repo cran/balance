@@ -1,3 +1,24 @@
+## balance 0.1.9
+---------------------
+* Update `balance` methods
+    * Check for equivalent names in `balance.fromSBP` call
+    * No longer export `balance.fromContrast` function
+    * Add `sbp.fromHclust` test
+
+## balance 0.1.8
+---------------------
+* Add `sbp` methods
+    * New `sbp.subset` returns named ternary or ratio balances
+    * New `sbp.fromRandom` returns random binary tree
+    * New `sbp.fromABA` returns modified PBA tree
+    * New `sbp.fromPropd`returns theta tree
+
+## balance 0.1.7
+---------------------
+* Update documentation
+    * Place all `pba` functions within `?pba` help file
+    * Make `pba` method help more accessible
+
 ## balance 0.1.6
 ---------------------
 * Update `balance` methods

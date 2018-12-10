@@ -5,17 +5,6 @@
 #'  with values [-1, 0, 1] describing D components.
 #'
 #' @return A transformation of samples for the balance provided.
-#'
-#' @author Thom Quinn
-#'
-#' @examples
-#' library(balance)
-#' data(iris)
-#' x <- iris[,1:4]
-#' sbp <- sbp.fromPBA(x)
-#' balance.fromContrast(x, sbp[,1])
-#'
-#' @export
 balance.fromContrast <- function(x, contrast){
 
   if(length(contrast) != ncol(x)) stop("Contrast must have length ncol(x) = D.")
@@ -51,6 +40,11 @@ balance.fromContrast <- function(x, contrast){
 #'
 #' @export
 balance.fromSBP <- function(x, y){
+
+  if(!identical(colnames(x), rownames(y))){
+
+    stop("Component names for data matrix and balance matrix do not match.")
+  }
 
   x <- as.matrix(x)
 
