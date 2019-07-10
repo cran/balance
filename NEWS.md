@@ -1,3 +1,40 @@
+## balance 0.2.4
+---------------------
+* Update `vlr` methods
+    * Add `pairwise` argument to `ssBetween` and `ssWithin`
+    * Add new tests for `ss` method
+
+## balance 0.2.3
+---------------------
+* Update `sbp` methods
+    * Replace `sbp.fromPDBA` with tree that clusters (1 - theta)
+    * Replace `sbp.fromADBA` with `sbp.fromPropd` wrapper
+    * Deprecate all `ldaRule` commands
+* Add `vlr` methods
+    * Add `ssBetween` to calculate between-group log-ratio sums of squares
+    * Add `ssWithin` to calculate within-group log-ratio sums of squares
+
+## balance 0.2.2
+---------------------
+* Update `sbp` methods
+    * New `ldaRule` calculates BETWEEN / WITHIN variance pair-wise
+    * New `sbp.fromPDBA` returns a rooted discriminative tree
+    * New `sbp.fromADBA` returns a distal discriminative tree
+    * Suppress messages for `propr::propd` calls
+    * Revise some documentation
+
+## balance 0.2.1
+---------------------
+* Update `balance.plot` method
+    * Now plot boxplot OR points (not both)
+    * Fix length of range line
+
+## balance 0.2.0
+---------------------
+* Update `pba` methods
+    * New argument `how` supports any SBP routine
+    * Add new tests for `pba.predict` method
+
 ## balance 0.1.9
 ---------------------
 * Update `balance` methods
